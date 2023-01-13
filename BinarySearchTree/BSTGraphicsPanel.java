@@ -27,7 +27,7 @@ public class BSTGraphicsPanel extends JPanel {
             BinaryNode p = q.poll();
             if (p != null) {
                 //System.out.println(p.x + " " + p.y + " " + p.getValue());
-                g.drawRect(p.x, p.y, 50, 50);
+                g.drawRect(p.x, p.y, 25, 25);
                 g.drawString("" + p.getValue(), p.x + 12, p.y + 25);
                 if (p.parent != null) {
                     g.drawLine(p.x + 10, p.y + 20, p.parent.x + 10, p.parent.y + 20);
@@ -43,5 +43,6 @@ public class BSTGraphicsPanel extends JPanel {
         g.drawString("Width: " + tree.width(), 20, 150);
         g.drawString("Diameter: " + tree.diameter(), 20, 175);
     }
+    
 }
 //1000 500 1500 750 250 300 100 600 800 1400 1200 1450 1470 1425 1100 1250 1600 1502 1501 1503 1602 1603 1601 50 200 550 700 760 850 25 20 860 1050
