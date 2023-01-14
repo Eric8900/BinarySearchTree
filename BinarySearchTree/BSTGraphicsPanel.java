@@ -11,8 +11,6 @@ public class BSTGraphicsPanel extends JPanel {
     public void paint(Graphics g) {
         super.paintComponent(g);
         g.setFont(new Font("Times New Roman", 1, 20));
-        //g.setColor(new Color(188, 228, 255));
-        //g.fillRect(0, 0, getWidth(), getHeight());
         g.setColor(new Color(108, 32, 139));
         g.drawString("Max Accurate Depth: 5", 20, 100);
         g.drawString("Enter Numbers", 815, 25);
@@ -39,7 +37,7 @@ public class BSTGraphicsPanel extends JPanel {
             }
             g.setColor(new Color(30, 50, 240));
             g.setFont(new Font("Times New Roman", 1, 15));
-            g.drawString("Preorder Representation: " + BSTGraphicsFrame.tree.preOrder(BSTGraphicsFrame.tree.getRoot()), 100, getHeight() - 20);
+            g.drawString("Preorder Representation: " + BSTGraphicsFrame.tree.preOrder(BSTGraphicsFrame.tree.getRoot()), 100, getHeight() - 50);
             g.drawString("Height: " + (BSTGraphicsFrame.tree.height(BSTGraphicsFrame.tree.getRoot()) - 1), 20, 125);
             g.drawString("Width: " + BSTGraphicsFrame.tree.width(), 20, 150);
             g.drawString("Diameter: " + BSTGraphicsFrame.tree.diameter(), 20, 175);

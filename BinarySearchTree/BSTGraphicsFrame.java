@@ -18,8 +18,7 @@ public class BSTGraphicsFrame extends JFrame implements ActionListener, KeyListe
         panel = new BSTGraphicsPanel();
         t = new JTextField("5 1 3 7 10 6 0");
         t.setPreferredSize(new Dimension(150, 30));
-        t.setLocation(1600, 25);
-        //t.addKeyListener(this);
+        t.setMinimumSize(t.getPreferredSize());
         addBtn = new JButton("Add");
         addBtn.addActionListener(this);
         delBtn = new JButton("Remove");
