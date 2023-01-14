@@ -2,6 +2,8 @@ import java.util.*;
 public class BinarySearchTree {
     private BinaryNode root;
     public int[] originalNums;
+    public BinarySearchTree() {
+    }
     public BinarySearchTree(int[] nums) {
         originalNums = nums;
     }
@@ -142,6 +144,15 @@ public class BinarySearchTree {
         int temp = a.getValue();
         a.setValue(b.getValue());
         b.setValue(temp);
+    }
+
+    public void reArrangeAAAAAAAAAAAAAA() {
+        String[] s = preOrder(root).split(" ");
+        root = null;
+        for (int i = 0; i < s.length; i++) {
+            int n = Integer.parseInt(s[i]);
+            Add(n, 860, 50, 0);
+        }
     }
     
     public BinaryNode getRoot() {

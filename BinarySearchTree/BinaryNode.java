@@ -38,4 +38,8 @@ public class BinaryNode {
     public void setRight(BinaryNode r) {
         right = r;
     }
+    public int digitsX() {
+        int length = String.valueOf(value).length();
+        return length;
+    }
 }
