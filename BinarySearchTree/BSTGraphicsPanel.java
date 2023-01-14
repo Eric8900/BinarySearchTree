@@ -9,13 +9,11 @@ public class BSTGraphicsPanel extends JPanel {
     public BSTGraphicsPanel() {
     }
     public void paint(Graphics g) {
-        super.paintComponent(g);
+        super.paintComponents(g);
         g.setFont(new Font("Times New Roman", 1, 20));
         g.setColor(new Color(108, 32, 139));
         g.drawString("Max Accurate Depth: 5", 20, 100);
-        g.drawString("Enter Numbers", 815, 25);
-        g.drawString("Remove --- Add", 960, 25);
-        g.drawString("Enter in single integers or multiple integers to add or delete \n Example: 5 1 3 7 10 6 0 -------->", 20, 25);
+        g.drawString("Enter in single integers or multiple integers to add or delete \n Example: 5 1 3 7 10 6 0 ---->", 20, 25);
         if (BSTGraphicsFrame.tree.getRoot() != null) {
             Queue<BinaryNode> q = new LinkedList<>();
             q.add(BSTGraphicsFrame.tree.getRoot());
